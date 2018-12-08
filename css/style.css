@@ -1,0 +1,52 @@
+/* fonts and colors */
+body {
+    background-color: #D8D2E1;
+    margin:25px;
+}
+
+h2 {
+    font-family: 'Homemade Apple', cursive;
+    /* plum */
+    color: #4E4966;
+}
+
+h3 {
+    font-family: 'Roboto Slab', serif;
+    /* plum */
+    color: #4E4966;
+}
+
+h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    /* plum */
+    color: #4E4966;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    /* dark pink */
+    color: #543c54;
+}
+
+.button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    /* plum */
+    color: #4E4966;
+
+    /* pink */
+    background-color: #BCA0BC;
+    padding: 6px 15px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    cursor: pointer;
+
+    /* pink */
+    color: #BCA0BC;
+
+    /* plum */
+    background-color: #4E4966;
+}
+
