@@ -48,7 +48,7 @@ p {
     color: #4E4966; /* plum */
 }
 
-.button:hover {
+.button:hover, .button:active {
     cursor: pointer;
 
     background-color: #4E4966; /* plum */
