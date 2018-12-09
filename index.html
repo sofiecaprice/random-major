@@ -9,27 +9,31 @@
         <link rel="stylesheet" href="css/style.css"/>
         <script src="js/major.js" defer="true"></script>
     </head>
-    <body class="">
+    <body>
         <div id="intro">
             <h2>
                 To begin your reading, take a moment to center your thoughts. When you have formulated a question, tap here to shuffle the cards.
             </h2>
-            <span class="button" id="shuffle">
+            <div>
+            <div class="button" id="shuffle">
                 SHUFFLE CARDS
-            </span>
+            </div>
+        </div>
+
+        <div id="query">
             <p>
                 Shuffling...
             </p>
-            <span class="button" id="deal">
+            <div class="button" id="deal">
                 DEAL A CARD
-            </span>
+            </div>
         </div>
 
         <div class="result" id="known">
             <h3>
                 The Magician
             </h3>
-            <p>
+            <p id="known-summary">
                 You are now able to transform your life through the strength of your originality and power -- all you need to do is take action on the highest level.
             </p>
         </div>
@@ -41,16 +45,16 @@
             <h4>
                 Summary
             </h4>
-            <p>
+            <p id="learning-summary">
                 Let go of expectations and trust your instincts.
             </p>
             <h4>
                 Tarot
             </h4>
-            <p>
+            <p id="learning-tarot">
                 Let go of preconceived ideas and remain open to change. The Fool advises that you lighten up. Let yourself be spontaneous enough to stretch beyond the realm of logic. There is no advantage to be gained by thinking you possess the knowledge, power, or control to direct reality. Open and receive without question, instead of trying to manage what's happening right now. The Fool has no ambition to manipulate a specific outcome. Just be happy to be part of the whole. Release any demands or expectations. Give your complete attention to events as they are occurring in the present moment.
             </p>
-            <h4>
+            <h4 id="learning-goddess">
                 Goddess
             </h4>
             <p>

@@ -1,52 +1,65 @@
 /* fonts and colors */
 body {
-    background-color: #D8D2E1;
     margin:25px;
+
+    background-color: #D8D2E1;
 }
 
-h2 {
+h2 { /* top text */
+    margin: 0px;
+
     font-family: 'Homemade Apple', cursive;
-    /* plum */
-    color: #4E4966;
+    color: #4E4966; /* plum */
 }
 
-h3 {
+h3 { /* card name */
+    margin: 0px 0px 18px 0px;
+
     font-family: 'Roboto Slab', serif;
-    /* plum */
-    color: #4E4966;
+    color: #4E4966; /* plum */
 }
 
-h4 {
+h4 { /* explanation subheading */
+    margin: 10px 0px;
+
     font-family: 'Source Sans Pro', sans-serif;
-    /* plum */
-    color: #4E4966;
+    color: #4E4966; /* plum */
 }
 
 p {
+    margin: 5px 0px;
+
     font-family: 'Source Sans Pro', sans-serif;
-    /* dark pink */
-    color: #543c54;
+    color: #543c54; /* dark pink */
 }
 
 .button {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    /* plum */
-    color: #4E4966;
+    margin: 8px 0px;
 
-    /* pink */
-    background-color: #BCA0BC;
-    padding: 6px 15px;
-    border-radius: 5px;
+    display: inline-block;
+    background-color: #BCA0BC; /* pink */
+    padding: 10px 30px;
+    border-radius: 4px;
+
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 2px;
+    color: #4E4966; /* plum */
 }
 
 .button:hover {
     cursor: pointer;
 
-    /* pink */
-    color: #BCA0BC;
+    background-color: #4E4966; /* plum */
 
-    /* plum */
-    background-color: #4E4966;
+    color: #BCA0BC; /* pink */
 }
 
+.result {
+    margin: 20px 0px;
+
+    padding: 15px;
+
+    border: 2px dashed #4E4966; /* plum */
+}
