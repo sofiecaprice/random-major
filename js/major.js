@@ -1,4 +1,8 @@
-cards = [
+// ---------------
+// CONSTANTS: DATA
+// ---------------
+
+const cardData = [
     {
         title: 'The Fool',
         known: false,
@@ -16,17 +20,17 @@ cards = [
     {
         title: 'The High Priestess',
         known: true,
-        explanation: 'Persephone: https://gfx.tarot.com/images/site/decks/fenestra/full_size/2.jpg',
+        explanation: '<img src="https://gfx.tarot.com/images/site/decks/fenestra/full_size/2.jpg"/>',
     },
     {
         title: 'The Empress',
         known: true,
-        explanation: 'Hera: https://gfx.tarot.com/images/site/decks/fenestra/full_size/3.jpg',
+        explanation: '<img src="https://gfx.tarot.com/images/site/decks/fenestra/full_size/3.jpg"/>',
     },
     {
         title: 'The Emperor',
         known: true,
-        explanation: 'Zeus: https://gfx.tarot.com/images/site/decks/fenestra/full_size/4.jpg',
+        explanation: '<img src="https://gfx.tarot.com/images/site/decks/fenestra/full_size/4.jpg"/>',
     },
     {
         title: 'The Hierophant',
@@ -77,7 +81,7 @@ cards = [
     {
         title: 'Justice',
         known: true,
-        explanation: 'Athena',
+        explanation: '<img src="https://gfx.tarot.com/images/site/decks/goddess/full_size/11.jpg"/>',
     },
     {
         title: 'The Hanged Man',
@@ -127,7 +131,7 @@ cards = [
     {
         title: 'The Star',
         known: true,
-        explanation: 'Hestia: https://gfx.tarot.com/images/site/decks/fenestra/full_size/17.jpg',
+        explanation: '<img src="https://gfx.tarot.com/images/site/decks/fenestra/full_size/17.jpg"/>',
     },
     {
         title: 'The Moon',
@@ -153,7 +157,7 @@ cards = [
         explanation: [
             'You have the power to make changes and feel complete.',
             'Let go of your past. The future welcomes you with a bounty of growth and change. The Judgment card advises that you allow yourself to grow, transform, and release hidden potentials within yourself. Divest yourself of fruitless endeavors without neglecting your duties. At the same time, invest your energies in new growth. It\'s not necessary to reject others, but refuse to be manipulated by those who cry foul. This process isn\'t about them anyway. It is about you and the desire you feel to change your life and become a more complete person. Trust your impulses and allow this remarkable awakening to happen.',
-            'Judgment presents an invitation for you to become queen of your life -- to rule over your personal realm just as Gwenhwyfar ruled over Wales. This card frequently appears when it is time foa major and necessary change in life -- often welcome, but frightening because of its magnitude. Important decisions or news may arrive soon. See this card as an affirmation of your judgment; make your move with the confidence of a queen.',
+            'Judgment presents an invitation for you to become queen of your life -- to rule over your personal realm just as Gwenhwyfar ruled over Wales. This card frequently appears when it is time for a major and necessary change in life -- often welcome, but frightening because of its magnitude. Important decisions or news may arrive soon. See this card as an affirmation of your judgment; make your move with the confidence of a queen.',
         ],
     },
     {
@@ -163,3 +167,172 @@ cards = [
     },
 ]
 
+// ------------------
+// CONSTANTS: STRINGS
+// ------------------
+
+const INACTIVE = 'inactive';
+const SECTION_INTRO = 'section-intro';
+const SECTION_QUERY = 'section-query';
+const SECTION_KNOWN = 'section-known';
+const SECTION_LEARNING = 'section-learning';
+const BUTTON_DEAL = 'button-deal';
+const BUTTON_SHUFFLE = 'button-shuffle';
+const KNOWN_TITLE = 'known-title';
+const KNOWN_SUMMARY = 'known-summary';
+const LEARNING_TITLE = 'learning-title';
+const LEARNING_SUMMARY = 'learning-summary';
+const LEARNING_TAROT = 'learning-tarot';
+const LEARNING_GODDESS = 'learning-goddess';
+
+// ----------------
+// GLOBAL VARIABLES
+// ----------------
+
+let cards = [...cardData.keys()]; // https://stackoverflow.com/questions/3895478
+let cardsArrayIndex = -1;
+
+// ---------------
+// FUNCTIONS: DATA
+// ---------------
+
+function shuffleCards() {
+    // shuffle `cards`
+    _shuffle(cards);
+
+    // reset `cardsArrayIndex`
+    cardsArrayIndex = -1;
+}
+
+// deal card
+function dealCard() {
+    // increment `cardsArrayIndex`
+    cardsArrayIndex += 1;
+
+    // loop around to the beginning
+    cardsArrayIndex %= cards.length;
+}
+
+function populateKnownCard(cardDataIndex) {
+    let cardObj = cardData[cardDataIndex];
+
+    if (cardObj.known === false) {
+        console.error('Trying to call populateKnownCard() on a card with known: false');
+        return;
+    }
+
+    const knownTitle = document.getElementById(KNOWN_TITLE);
+    const knownSummary = document.getElementById(KNOWN_SUMMARY);
+
+    knownTitle.textContent = cardObj.title;
+    knownSummary.innerHTML = cardObj.explanation;
+}
+
+function populateLearningCard(cardDataIndex) {
+    let cardObj = cardData[cardDataIndex];
+
+    if (cardObj.known === true) {
+        console.error('Trying to call populateLearningCard() on a card with known: true');
+        return;
+    }
+
+    const learningTitle = document.getElementById(LEARNING_TITLE);
+    const learningSummary = document.getElementById(LEARNING_SUMMARY);
+    const learningTarot = document.getElementById(LEARNING_TAROT);
+    const learningGoddess = document.getElementById(LEARNING_GODDESS);
+
+    learningTitle.textContent = cardObj.title;
+    learningSummary.textContent = cardObj.explanation[0];
+    learningTarot.textContent = cardObj.explanation[1];
+    learningGoddess.textContent = cardObj.explanation[2];
+}
+
+// ------------------
+// FUNCTIONS: DISPLAY
+// ------------------
+
+// display `query` section ('Shuffling...' message)
+function displaySection(elementId, shouldDisplay) {
+    const sectionDOM = document.getElementById(elementId);
+    if (shouldDisplay) {
+        sectionDOM.classList.remove(INACTIVE);
+    } else {
+        sectionDOM.classList.add(INACTIVE);
+    }
+}
+
+// -------------------------
+// FUNCTIONS: CLICK HANDLERS
+// -------------------------
+
+function onClickShuffle() {
+    // hide everything
+    displaySection(BUTTON_DEAL, false);
+    displaySection(SECTION_KNOWN, false);
+    displaySection(SECTION_LEARNING, false);
+
+    // shuffle and show 'Shuffling...'
+    shuffleCards();
+    displaySection(SECTION_QUERY, true);
+
+    // later show 'Deal Card' button
+    setTimeout(() => {displaySection(BUTTON_DEAL, true)}, 900);
+
+    console.log('cards', cards);
+    console.log('cardsArrayIndex', cardsArrayIndex);
+}
+
+function onClickDeal() {
+    // deal card
+    dealCard();
+
+    cardDataIndex = cards[cardsArrayIndex];
+    if (cardData[cardDataIndex].known) {
+        // populate known card
+        populateKnownCard(cardDataIndex);
+
+        // show only known card
+        displaySection(SECTION_KNOWN, true);
+        displaySection(SECTION_LEARNING, false);
+    } else {
+        // populate learning card
+        populateLearningCard(cardDataIndex);
+
+        // show only learning card
+        displaySection(SECTION_LEARNING, true);
+        displaySection(SECTION_KNOWN, false);
+    }
+
+    console.log('cards', cards);
+    console.log('cardsArrayIndex', cardsArrayIndex);
+}
+
+const shuffleButton = document.getElementById(BUTTON_SHUFFLE);
+const dealButton = document.getElementById(BUTTON_DEAL);
+
+shuffleButton.addEventListener('click', onClickShuffle);
+dealButton.addEventListener('click', onClickDeal);
+
+// ----------------
+// HELPER FUNCTIONS
+// ----------------
+
+// helper function: cannot believe this isn't built in zomg https://stackoverflow.com/questions/2450954
+function _shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}

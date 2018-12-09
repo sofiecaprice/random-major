@@ -1,4 +1,8 @@
-/* fonts and colors */
+/* for hiding inactive sections */
+.inactive {
+  display: none !important;
+}
+
 body {
     margin:25px;
 

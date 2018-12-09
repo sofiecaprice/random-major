@@ -10,27 +10,26 @@
         <script src="js/major.js" defer="true"></script>
     </head>
     <body ontouchstart="">
-        <div id="intro">
+        <div id="section-intro">
             <h2>
                 To begin your reading, take a moment to center your thoughts. When you have formulated a question, tap here to shuffle the cards.
             </h2>
-            <div>
-            <div class="button" id="shuffle">
+            <div class="button" id="button-shuffle">
                 SHUFFLE CARDS
             </div>
         </div>
 
-        <div id="query">
+        <div class="inactive" id="section-query">
             <p>
                 Shuffling...
             </p>
-            <div class="button" id="deal">
+            <div class="button inactive" id="button-deal">
                 DEAL A CARD
             </div>
         </div>
 
-        <div class="result" id="known">
-            <h3>
+        <div class="result inactive" id="section-known">
+            <h3 id="known-title">
                 The Magician
             </h3>
             <p id="known-summary">
@@ -38,8 +37,8 @@
             </p>
         </div>
 
-        <div class="result" id="learning">
-            <h3>
+        <div class="result inactive" id="section-learning">
+            <h3 id="learning-title">
                 The Fool
             </h3>
             <h4>
@@ -54,10 +53,10 @@
             <p id="learning-tarot">
                 Let go of preconceived ideas and remain open to change. The Fool advises that you lighten up. Let yourself be spontaneous enough to stretch beyond the realm of logic. There is no advantage to be gained by thinking you possess the knowledge, power, or control to direct reality. Open and receive without question, instead of trying to manage what's happening right now. The Fool has no ambition to manipulate a specific outcome. Just be happy to be part of the whole. Release any demands or expectations. Give your complete attention to events as they are occurring in the present moment.
             </p>
-            <h4 id="learning-goddess">
+            <h4>
                 Goddess
             </h4>
-            <p>
+            <p id="learning-goddess">
                 Often our fears will emerge as we begin a new phase of life: a promising relationship, a new venture, a change of home or job. The appearnace of this card is an invitation for us to consider the functions these fears perform, so we may release them. This is a time for new beginnings, for optimism and trust.
             </p>
         </div>
