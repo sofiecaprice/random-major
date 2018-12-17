@@ -5,12 +5,8 @@
 const cardData = [
     {
         title: 'The Fool',
-        known: false,
-        explanation: [
-            'Let go of expectations and trust your instincts.',
-            'Let go of preconceived ideas and remain open to change. The Fool advises that you lighten up. Let yourself be spontaneous enough to stretch beyond the realm of logic. There is no advantage to be gained by thinking you possess the knowledge, power, or control to direct reality. Open and receive without question, instead of trying to manage what\'s happening right now. The Fool has no ambition to manipulate a specific outcome. Just be happy to be part of the whole. Release any demands or expectations. Give your complete attention to events as they are occurring in the present moment.',
-            'Often our fears will emerge as we begin a new phase of life: a promising relationship, a new venture, a change of home or job. The appearance of this card is an invitation for us to consider the functions these fears perform, so we may release them. This is a time for new beginnings, for optimism and trust.',
-        ],
+        known: true,
+        explanation: 'Let go of preconceived ideas and remain open to change. There is no advantage to be gained by thinking you possess the knowledge, power, or control to direct reality. Open and receive without question, instead of trying to manage what\'s happening right now. The Fool has no ambition to manipulate a specific outcome. Just be happy to be part of the whole. Release any demands or expectations. Give your complete attention to events as they are occurring in the present moment.',
     },
     {
         title: 'The Magician',
@@ -103,12 +99,8 @@ const cardData = [
     },
     {
         title: 'Temperance',
-        known: false,
-        explanation: [
-            'The time is now for self-healing.',
-            'Identify and acquire the ingredients that will most help you complete your mission and leave the rest behind. The Temperance card advises you to identify and seek the missing ingredients in your life. Marshal your known skills and abilities and do what needs to be done to complete your mission. Prepare to use spiritual practices, studies, or lifestyle changes that can assist you in your quest. A tremendous amount of benefit is available if you can organize yourself and be disciplined at this time.',
-            'Yemana is often called upon to provide rain, water that nurtures all of life. This water created from the sky represents the necessary balance between heaven and earth -- a balance which brings harmony to the earth. This card suggests a state of grace where balance has been reached between the spiritual (symbolized by water) and the physical (symbolized by earth) worlds. This peaceful state is often obtained only after much struggle and consideration. Look for a union between the conscious and unconscious forces of life.',
-        ],
+        known: true,
+        explanation: 'Yemana is often called upon to provide rain, water that nurtures all of life. This water created from the sky represents the necessary balance between heaven and earth -- a balance which brings harmony to the earth.</p><h4>Water</h4><p>You approach your life more in terms of intuition rather than reasoning, and you value that trait in others.  You tend to be very aware of your own emotions and to be strongly affected by them.  Noticing others’ needs and responding to them is in your nature.</p><p>You’re a romantic person—not necessarily in relationships (though you definitely can be that), but in your whole approach to the world.  You see and react to beauty and tragedy, and experiences usually seem more meaningful or poignant to you than they do to others.  You have an instinct for caretaking, and love of all kinds—giving and getting—comes easily to you.</p><h4>Strengths</h4><p>You have strikingly accurate intuition, especially about other people, and you almost always know the right thing to do in awkward situations to make everyone feel better.</p><p>You’re very good at keeping secrets and you’re completely trustworthy.  You tend to be generous—sometimes more generous with others than you are with yourself!—and you may be one of those folks who senses the “vibe” of a room.  Your overflowing feeling may contribute to an ability to evoke strong reactions in others if you produce art about your experiences.  You’re generally the person anyone can count on for a good hug, and you flourish in being able to be that person.</p><h4>Weaknesses</h4><p>You may be termed “oversensitive” often by people who don’t feel like you do; this is because when you feel, it can overwhelm you and cause a tearful breakdown or an inability to function.  Sometimes you overextend yourself trying to take on too much of everyone else’s problems, and because you put yourself last, you can suffer if you don’t learn to balance yourself.  You may be unable to pull through something that’s bothering you and you just let it ruin your week as you brood.</p><p>Sometimes you can be moody and not interested in helping other people figure out what interactions from them you’d appreciate in this state—you’re annoyed that they can’t just know, like you do—so sometimes you pull away and isolate yourself, and may have a tendency to engage in addictive behaviors that are detrimental to your health.  Sometimes your sensitivity causes you to react to others’ words very strongly, and you find yourself the only offended or hurt person in the room.',
     },
     {
         title: 'The Devil',
@@ -153,12 +145,8 @@ const cardData = [
     },
     {
         title: 'Judgment',
-        known: false,
-        explanation: [
-            'You have the power to make changes and feel complete.',
-            'Let go of your past. The future welcomes you with a bounty of growth and change. The Judgment card advises that you allow yourself to grow, transform, and release hidden potentials within yourself. Divest yourself of fruitless endeavors without neglecting your duties. At the same time, invest your energies in new growth. It\'s not necessary to reject others, but refuse to be manipulated by those who cry foul. This process isn\'t about them anyway. It is about you and the desire you feel to change your life and become a more complete person. Trust your impulses and allow this remarkable awakening to happen.',
-            'Judgment presents an invitation for you to become queen of your life -- to rule over your personal realm just as Gwenhwyfar ruled over Wales. This card frequently appears when it is time for a major and necessary change in life -- often welcome, but frightening because of its magnitude. Important decisions or news may arrive soon. See this card as an affirmation of your judgment; make your move with the confidence of a queen.',
-        ],
+        known: true,
+        explanation: 'Judgment presents an invitation for you to become queen of your life -- to rule over your personal realm just as Gwenhwyfar ruled over Wales. This card frequently appears when it is time for a major and necessary change in life -- often welcome, but frightening because of its magnitude.',
     },
     {
         title: 'The World',
