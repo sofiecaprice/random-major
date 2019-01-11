@@ -88,12 +88,8 @@ const cardData = [
     },
     {
         title: 'The Devil',
-        known: false,
-        explanation: [
-            'Put subtlety aside and empower your passion and confidence.',
-            'Let go of inhibitions. Allow yourself to express all of who you are. The Devil card advises that you show some spunk. There may be nothing to be gained by trying to be subtle or strategic in this situation. Assert your agenda, express yourself honestly, and let the chips fall where they may. Your best bet could be to express your true emotions, possibly even including anger. Acknowledge that you have whatever feelings you have. While it may not be necessary to act out what you feel in every situation, accepting the power and depth of your inner experience enables you to remain true to yourself.',
-            'She symbolizes the hidden forces of the ocean -- forces whose powers must be respected. Every one has a dark side within themselves that can turn them from their highest purpose -- what jung would call the shadow. If it goes unacknowledged, we may find our shadow appearing where we least expect it: in the form of a person who bothers us, an addiction that enslaves us, even the need to control another. The appearance of this card invites us to own our weaknesses and grow stronger from them. Alternately, Temptation can represent an intoxicating immersion in the physical pleasures of life: intense sensuality, even gluttony.',
-        ],
+        known: true,
+        explanation: 'Let go of inhibitions. Allow yourself to express all of who you are. There may be nothing to be gained by trying to be subtle or strategic in this situation. Assert your agenda, express yourself honestly, and let the chips fall where they may. Your best bet could be to express your true emotions, possibly even including anger. Acknowledge that you have whatever feelings you have. While it may not be necessary to act out what you feel in every situation, accepting the power and depth of your inner experience enables you to remain true to yourself.</p><p>Dionysus: Alternately, Temptation can represent an intoxicating immersion in the physical pleasures of life: intense sensuality, even gluttony.',
     },
     {
         title: 'The Tower',
