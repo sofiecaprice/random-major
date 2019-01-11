@@ -39,12 +39,8 @@ const cardData = [
     },
     {
         title: 'The Lovers',
-        known: false,
-        explanation: [
-            'Integrate two potential realities or let go of one of them.',
-            'Creative compromise helps you accept your commitments fully. The Lovers card advises that you study your options and make the wisest choice. Carefully consider your long-term interests. There is no judgment on what you choose to keep from the array of possibilities before you. Just watch out for choices that will produce dissatisfaction and discontent. Be willing to make some compromises, then stick with the commitments you finally make. Trust your intuition along with your rational intellect, and once you make your choice, carry it out with conviction.',
-            'Love suggests a renewed awareness of the nature of passionate love and what is needed to encourage its growth. A new, important relationship may be on the horizon, one that dares you to live up to this challenge. It also offers the promise of artistic creativity, beauty, and sexuality -- as well as the ability to recognize the emotional beauty which surround us. Look for examples of inner and outer harmony in your life.',
-        ],
+        known: true,
+        explanation: '<img src="img/aphrodite.png"/></p><p>Aphrodite: Integrate two potential realities or let go of one of them.',
     },
     {
         title: 'The Chariot',
@@ -58,26 +54,18 @@ const cardData = [
     },
     {
         title: 'The Hermit',
-        known: false,
-        explanation: [
-            'Gaze into the mysteries of your inner life.',
-            'Give yourself time for contemplation. Don\'t allow others to stand in your way. The Hermit advises that you think things through carefully. The demands on you have been high, giving you scant time for reflection. While you have a gift for understanding the larger implications involved, you need some private time to consider the steps to take in the future. You can\'t just lock yourself in your room for fifteen minutes and expect to come up with profound solutions. You need more seclusion and time to assimilate and process. Now may be the moment for you to tell everyone to leave you alone. When you are fully ready, you will be able and willing to give others what they need.',
-            'Chang O symbolizes the need for withdrawal from the world to better contemplate life\'s eternal questions. Unlike Chang O, we do not need to spend our entire lives separated from the world receive the benefits of contemplation. The appearance of this card suggests it is time to allow yourself this necessity, so often overlooked and neglected. At this time, your needs are not so focused on relationships with others, but on strengthening your relationship with yourself and the universe.',
-        ],
+        known: true,
+        explanation: 'Chang O symbolizes the need for withdrawal from the world to better contemplate life\'s eternal questions. The appearance of this card suggests it is time to allow yourself this necessity, so often overlooked and neglected. At this time, your needs are not so focused on relationships with others, but on strengthening your relationship with yourself and the universe.</p><p>Give yourself time for contemplation. Don\'t allow others to stand in your way. The demands on you have been high, giving you scant time for reflection. Now may be the moment for you to tell everyone to leave you alone. When you are fully ready, you will be able and willing to give others what they need.',
     },
     {
         title: 'Wheel of Fortune',
-        known: false,
-        explanation: [
-            'Learn to go with the flow without resisting ups and downs.',
-            'Fundamental change is imminent. The positive benefits you gain during this period could last a long time. The Wheel of Fortune advises you follow the flow of events. Physical moves, spiritual awakenings, or dramatically changing social patterns could arise now. Accept these transformations. This is a safe place for you to be. You are watched over and protected as you go round and round the wheel. You will learn a lot. You will also learn it quickly, and what you absorb will benefit you for a long time to come.',
-            'The Fortune card suggests that your consciousness is flying to embrace good luck and abundance. You may also be experiencing a new awareness of the beauty and love surrounding you. The universe can be an expansive, generous place. If you feel even the tiniest resistance to this idea, perhaps now is the time to examine the role that expectations play in creating the future. There may be a new awareness of the role chance plays in your life.',
-        ],
+        known: true,
+        explanation: 'The Fortune card suggests that your consciousness is flying to embrace good luck and abundance. You may also be experiencing a new awareness of the beauty and love surrounding you. The universe can be an expansive, generous place. If you feel even the tiniest resistance to this idea, perhaps now is the time to examine the role that expectations play in creating the future. There may be a new awareness of the role chance plays in your life.',
     },
     {
         title: 'Justice',
         known: true,
-        explanation: '<img src="https://gfx.tarot.com/images/site/decks/goddess/full_size/11.jpg"/>',
+        explanation: '<img src="img/athena.png">',
     },
     {
         title: 'The Hanged Man',
@@ -90,12 +78,8 @@ const cardData = [
     },
     {
         title: 'Death',
-        known: false,
-        explanation: [
-            'Shed the old to make room for the new.',
-            'Free yourself from a past that no longer serves you well and proceed toward the future. The Death card advises you to detach from the old order. You may want to close accounts, complete unfinished tasks, and gather your harvest. It is time to move on. If you cut the cords that have bound you to old ways and outdated conventions, you could free yourself to join the sweep of incoming light. This is not an excuse to reject others or hurt them in any way. It is simply a time to move toward your ultimate interests. Do not allow nostalgia and outworn loyalties to hold you back. Be willing to go through whatever it takes to get to where you really want to be.',
-            'After her death, Ukemochi\'s body was transformed into various life forms to supply food and goods to nurture the world. While personal transformation can be a painful experience, this card offers the hope that change can be for the best. So often edath is looked upon as an end, instead of as a beginning; considering this, it is not surprising that we often cling to the old at the expense of growth. The appearance of Transformation suggests that it is time to allow something to die in order to create room for the new. Something better awaits.',
-        ],
+        known: true,
+        explanation: 'After her death, Ukemochi\'s body was transformed into various life forms to supply food and goods to nurture the world. So often death is looked upon as an end, instead of as a beginning; considering this, it is not surprising that we often cling to the old at the expense of growth. The appearance of Transformation suggests that it is time to allow something to die in order to create room for the new.',
     },
     {
         title: 'Temperance',
@@ -117,7 +101,7 @@ const cardData = [
         explanation: [
             'Because of circumstances beyond your control, you have no choice.',
             'You are the one to serve as a catalyst for change. With the Tower card, think of yourself as an agent of transformation. This self-sacrificing role is likely to create stressful situations. Your vision shows you that a radical change has already been unleashed by forces much larger than mere mortals, and therefore you are no longer resisting. Now you may be at the forefront, acknowledging and accepting the bracing presence of the future bursting in on the present. Try to mediate the harsher parts of the changes as they unfold, so the most vulnerable are the most cushioned. Acknowledge yourself, as well as the others in your life, who are offering their resources to usher in a better future.',
-            'Oppression often appears when we\'ve had an experience that has shattered our view of the world. It\'s hard to imagine life improving -- all we anticipate is never-ending darkness. The appearance of this card suggests that, while this situation is painful and overwhelming, it will not last forever. YOu will soon be released into a new start. Sometimes this card symbolizes depression and pessimism.',
+            'Oppression often appears when we\'ve had an experience that has shattered our view of the world. It\'s hard to imagine life improving -- all we anticipate is never-ending darkness. The appearance of this card suggests that, while this situation is painful and overwhelming, it will not last forever. You will soon be released into a new start. Sometimes this card symbolizes depression and pessimism.',
         ],
     },
     {
@@ -127,21 +111,13 @@ const cardData = [
     },
     {
         title: 'The Moon',
-        known: false,
-        explanation: [
-            'This is an opportunity to draw messages from your inner self.',
-            'Listen to the body and its unique wisdom. Rely upon your inner resources as your best source of support and security. The Moon card advises that you trust your instincts and intuitions. Your aboriginal body, which is connected to all living things, is sharper and quicker than the cultivated, civilized self. The everyday mind may not be prepared for strange oceanic circumstances. Plus, it has no game plan. Your intuitive body will support you unerringly if you do not interfere with or try to control what you perceive. A better approach would be to meditate. Try to just be a witness. Do nothing; let nature carry you forward. This may be your best option in this situation.',
-            'The Moon suggests intense feelings as changeable as that celestial body. Instead of seeing this as a negative, recognize that what is empty will become full again -- just as the moon does. These emotional times can be seen as opportunities to work on your relationship with what truly nourishes you; to develop intuition and trust in yourself. You may also be more aware of the nurturing of women who truly care about you.',
-        ],
+        known: true,
+        explanation: '<img src="img/artemis.png"/></p><p>Artemis: The Moon suggests intense feelings as changeable as that celestial body. These emotional times can be seen as opportunities to work on your relationship with what truly nourishes you; to develop intuition and trust in yourself.',
     },
     {
         title: 'The Sun',
-        known: false,
-        explanation: [
-            'You are in the right place at the right time.',
-            'Let your light shine. Be confident in the sacred power of your original nature. The Sun card advises you to have confidence in your natural divinity. Throw off any cultural conditioning that keeps you from being authentic with yourself. Step into the full light of truth and reveal your motives and principles. Once done, you will no longer give away power to the people that criticize and shame you. Focus on the positive and the real. Your authentic shining self can be a light for others if you project it without contrivance.',
-            'The Sun represents the brilliance of the life force that the Zorya protect: the incisiveness of intellect, the inspiration of creativity. Just as the sun shares its warmth, we all have special talents and qualities we need to share with the world. Prepare to shine your light to the world -- this is a time of optimism and opportunities. The appearance of this card is a wonderful affirmation of brilliant, expansive energy.',
-         ],
+        known: true,
+        explanation: 'Apollo: You are in the right place at the right time. Just as the sun shares its warmth, we all have special talents and qualities we need to share with the world. Prepare to shine your light to the world -- this is a time of optimism and opportunities. The appearance of this card is a wonderful affirmation of brilliant, expansive energy.'
     },
     {
         title: 'Judgment',

@@ -37,6 +37,10 @@ p {
     color: #543c54; /* dark pink */
 }
 
+img {
+    width: 195px;
+}
+
 .button {
     margin: 8px 0px;
 
